@@ -1,0 +1,59 @@
+import random
+import pyautogui
+
+import mouse
+import time
+import keyboard
+running = False
+
+def captcha():
+    mouse.click('right')
+    pyautogui.moveTo(700, 400)
+    mouse.click('right')
+    pyautogui.moveTo(750, 400)
+    mouse.click('right')
+    pyautogui.moveTo(800, 400)
+    mouse.click('right')
+    pyautogui.moveTo(850, 400)
+    mouse.click('right')
+    pyautogui.moveTo(900, 400)
+    mouse.click('right')
+    pyautogui.moveTo(950, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1000, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1050, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1100, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1150, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1200, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1250, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1300, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1350, 400)
+    mouse.click('right')
+    pyautogui.moveTo(1400, 400)
+    mouse.click('right')
+    time.sleep(3)
+
+if keyboard.read_key() == "m":
+    running = True
+    print("on")
+    while(running):
+        a = random.uniform(0, 3)
+        b = random.uniform(0, 3)
+
+        keyboard.press("w")
+        time.sleep(a)
+        keyboard.release("w")
+        time.sleep(b)
+        keyboard.press("w")
+        time.sleep(a)
+        keyboard.release("w")
+        time.sleep(b)
+
+        captcha()
